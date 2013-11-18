@@ -1,0 +1,15 @@
+<% content_for :title do %>
+	Edit Page
+<% end %>
+
+<h1>Edit Page</h1>
+
+<div id="form-wrapper">
+  <%= simple_form_for @show do |f| %>
+    <fieldset>
+      <%=f.input :name %>
+      <%=f.input :picture %>
+      <%=f.button :submit, "Submit" %>
+    </fieldset>
+  <% end %>
+</div>

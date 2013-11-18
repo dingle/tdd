@@ -5,7 +5,7 @@ Tdd::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'shows#index'
 
-  resources :shows, :only => [:index, :new, :create]
+  resources :shows, :only => [:index, :new, :show, :create, :edit, :update]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -41,7 +41,7 @@ Tdd::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
